@@ -1,0 +1,5 @@
+/bin/Malterlib_libtool.MalterlibDependency
+/bin/Malterlib_libtool.updated
+/bin/libtool
+/lib/clang/*/lib/*-unknown-linux-gnu
+/lib/clang/*/lib/.lock
