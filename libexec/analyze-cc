@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d41eb74c17f90cef0dfa9fd73a20d3de78d7152af80832526855ea878d9cc54f
-size 487
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+# See https://llvm.org/LICENSE.txt for license information.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+
+import sys
+import os.path
+this_dir = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(os.path.join(os.path.dirname(this_dir), 'lib'))
+
+from libscanbuild.analyze import analyze_compiler_wrapper
+sys.exit(analyze_compiler_wrapper())
